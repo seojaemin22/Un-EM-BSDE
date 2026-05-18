@@ -257,6 +257,12 @@
               <p>
                 Instead of squaring a single realization, we calculate the product of errors from two independent sample groups (\(M_{1}, M_{2}\)). This ensures that the expectation of the product remains unbiased, removing the variance-induced noise from the optimization landscape.
               </p>
+              <figure class="image" style="margin: 2rem auto; text-align: center;">
+                <img src="static/images/Unbiased_EM-BSDE.png" alt="Unbiased EM-BSDE Mechanism" style="max-width: 80%; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); margin: 0 auto; display: inline-block;">
+                <figcaption class="has-text-centered" style="margin-top: 1rem; font-size: 0.95rem; color: #64748b;">
+                  By multiplying errors from two independently formed groups of trajectories, we produce an unbiased gradient signal.
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
