@@ -242,6 +242,16 @@
               <p>
                 <strong>The Issue:</strong> Due to the property of the squared term, the variance of the approximation error acts as a non-vanishing bias, which can hinder the network from converging to the true solution.
               </p>
+              <div style="text-align: center; margin: 1.5rem 0;">
+                \begin{equation}
+                    \begin{aligned}
+                        \ell_{\mathrm{EM}}(\theta; n, x) =~& 
+                        \left( [\mathcal{L}[u_\theta] - \phi_{u_\theta}](t_n, x) \right)^2 \\
+                        &+ \frac{1}{2}\mathrm{Tr}[(\sigma^T(\nabla^2 u_\theta) \sigma)^2](t_n, x)  \\
+                        &+ O(\Delta t^{1/2}) .
+                    \end{aligned}
+                \end{equation}
+              </div>
               <p>
                 <strong>Our Approach: Un-EM-BSDE Loss</strong><br>
                 To eliminate this systematic error, we employ an Unbiased Estimator that effectively decouples the stochastic terms:
